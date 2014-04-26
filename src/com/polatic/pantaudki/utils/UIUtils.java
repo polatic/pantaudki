@@ -6,7 +6,6 @@
  */
 package com.polatic.pantaudki.utils;
 
-import com.facebook.Session;
 
 import android.app.Activity;
 import android.content.Context;
@@ -33,14 +32,6 @@ public class UIUtils {
 		inputManager.hideSoftInputFromWindow(
 				window.getCurrentFocus().getWindowToken(),
 		        InputMethodManager.HIDE_NOT_ALWAYS); 
-	}
-	
-	public static void clearFacebookSession() {
-	 // Clear facebook session
-        if (Session.getActiveSession() != null) {
-            Session.getActiveSession().closeAndClearTokenInformation();
-        }
-        Session.setActiveSession(null);
 	}
 	
 }

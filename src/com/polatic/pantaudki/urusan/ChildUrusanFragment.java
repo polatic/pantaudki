@@ -188,6 +188,8 @@ public class ChildUrusanFragment extends Fragment {
         fragmentTransaction.replace(R.id.content_frame, detailFragment);
         if (ori == configuration.ORIENTATION_PORTRAIT) {
             fragmentTransaction.addToBackStack(null);
+        } else {
+            fragmentTransaction.addToBackStack("tag");
         }
 
         fragmentTransaction.commit();
