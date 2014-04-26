@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/LabelTextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/element_spacing_normal"
+                android:text="@string/home_label_menu_second_one" />
+
+            <RelativeLayout
+                android:id="@+id/total_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" >
+
+                <com.echo.holographlibrary.BarGraph
+                    android:id="@+id/first_bargraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barAxisColor="@color/transparent_blue" />
+            </RelativeLayout>
+
+            <View style="@style/HomeSeparator" />
+
+            <TextView
+                style="@style/LabelTextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_label_menu_second_one" />
+
+            <RelativeLayout
+                android:id="@+id/total_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" >
+
+                <com.echo.holographlibrary.BarGraph
+                    android:id="@+id/second_bargraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barAxisColor="@color/main_green_light" />
+            </RelativeLayout>
+
+            <View style="@style/HomeSeparator" />
+
+            <TextView
+                style="@style/LabelTextHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_label_menu_second_two" />
+
+            <RelativeLayout
+                android:id="@+id/total_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" >
+
+                <com.echo.holographlibrary.BarGraph
+                    android:id="@+id/third_bargraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:barAxisColor="@color/main_green_light" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
