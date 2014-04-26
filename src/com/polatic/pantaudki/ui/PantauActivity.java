@@ -1,5 +1,7 @@
 
-package com.polatic.pantaudki;
+package com.polatic.pantaudki.ui;
+
+import com.polatic.pantaudki.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;

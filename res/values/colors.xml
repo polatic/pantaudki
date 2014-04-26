@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_blue">#297FB8</color>
+    <color name="main_white">#F7F7F7</color>
+    <color name="main_brown">#6A4A3C</color>
+    <color name="main_red">#DF0005</color>
+    <color name="main_gray">#514F4F</color>
+    <color name="main_gray_light">#D7D7D7</color>
+    <color name="main_orange">#EB6841</color>
+    <color name="main_green">#6BCE09</color>
+    <color name="main_green_light">#18F200</color>
+    <color name="main_blue_light">#64ACDD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_light">#F5F7FA</color>
+    <color name="white_heavy">#E6E9ED</color>
+    <color name="grey">#D3D6DB</color>
+    <color name="blue_light">#5D9CEC</color>
+    <color name="blue_heavy">#4A89DC</color>
+    <color name="yellow_heavy">#F6BB42</color>
+    <color name="yellow_light">#FFCE54</color>
+    <color name="dark_gray_light">#656D78</color>
+    <color name="dark_gray_heavy">#434A54</color>
+    <color name="black">#000000</color>
+	<color name="red_light">#ED5565</color>
+    <color name="red_heavy">#DA4453</color>
+    <color name="blue_custoom">#2198d5</color>
+    <color name="blue_fb">#297FB8</color>
+    <color name="blue_dark">#05304b</color>
+    <color name="red">#c44b42</color>
+    <color name="dark_heavy">#474D56</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="transparent">#55000000</color>
+</resources>

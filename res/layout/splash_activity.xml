@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash_background" >
+
+    <FrameLayout
+        android:id="@+id/splash_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/splash_layout_internet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@color/black_transparent"
+            android:gravity="bottom|center"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/splash_internet_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/network_no_internet"
+                android:textColor="@color/main_white"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/splash_center_fakeview"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/splash_center_fakeview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/logo_dki" />
+
+    <TextView
+        android:id="@+id/splash_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/main_white"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_info_text"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.25" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/main_gray_light" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/splash_button_reconnect"
+        style="@style/GreenButton"
+        android:layout_below="@id/splash_center_fakeview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_action_refresh"
+        android:padding="10dp"
+        android:text="@string/splash_reconnect" />
+
+    <ProgressBar
+        android:id="@+id/splash_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_center_fakeview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
