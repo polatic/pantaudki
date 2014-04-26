@@ -164,7 +164,6 @@ public class SplashActivity extends Activity implements OnClickListener {
                 mProgress.setVisibility(View.GONE);
                 mBtnReconnect.setVisibility(View.VISIBLE);
             }
-
         });
     }
 
@@ -249,6 +248,8 @@ public class SplashActivity extends Activity implements OnClickListener {
                     mEditor = mSharedPreferences.edit();
                     mEditor.putString(Constant.API_CACHE_SKPD, response.toString());
                     mEditor.commit();
+                    
+                    goToHome();
 
                 } catch (JSONException e) {
                     e.printStackTrace();

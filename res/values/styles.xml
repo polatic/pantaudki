@@ -2,19 +2,27 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LabelTextHome">
+        <item name="android:textColor">@color/main_gray</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
     </style>
 
     <style name="LoginButtonStyle">
@@ -30,6 +38,22 @@
         <item name="android:layout_weight">0.33</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <style name="HomeSeparator">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/main_gray_light</item>
+        <item name="android:layout_marginBottom">@dimen/element_padding_big</item>
+        <item name="android:layout_marginTop">@dimen/element_padding_big</item>
+    </style>
+    
+    <style name="DetailSeparator">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/main_gray_light</item>
+        <item name="android:layout_marginBottom">@dimen/element_padding_tiny</item>
+        <item name="android:layout_marginTop">@dimen/element_padding_tiny</item>
     </style>
 
     <style name="LoginButtonWrapper" parent="LoginButtonStyle">
@@ -149,6 +173,40 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:background">@drawable/buy_button</item>
         <item name="android:padding">@dimen/element_padding_small</item>
+    </style>
+
+    <style name="APBDDetailLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/element_padding_tiny</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">10</item>
+    </style>
+
+    <style name="APBDDetailLayoutParent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="APBDDetailLeftLayout" parent="APBDDetailLayoutParent">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="APBDDetailLeftImageLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:paddingTop">@dimen/element_padding_tiny</item>
+    </style>
+
+    <style name="APBDDetailRightLayout" parent="APBDDetailLayoutParent">
+        <item name="android:layout_weight">9</item>
+    </style>
+
+    <style name="APBDDetailRightTextLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/main_gray</item>
     </style>
 
 </resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@color/black_transparent"
+                android:orientation="vertical"
+                android:padding="@dimen/element_padding_small" >
+
+                <TextView
+                    android:id="@+id/apbd_detail_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_white"
+                    android:textSize="@dimen/text_size_large"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/APBDDetailLayout" >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/activity" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_program"
+                        style="@style/APBDDetailRightTextLayout"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DetailSeparator" />
+
+            <!-- End HERE -->
+
+            <LinearLayout style="@style/APBDDetailLayout" >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/location" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_skdp"
+                        style="@style/APBDDetailRightTextLayout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DetailSeparator" />
+
+            <LinearLayout style="@style/APBDDetailLayout" >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/calendar" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_year"
+                        style="@style/APBDDetailRightTextLayout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DetailSeparator" />
+
+            <!-- ListRow Left sied Thumbnail image -->
+
+            <LinearLayout style="@style/APBDDetailLayout" >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/cart" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_price"
+                        style="@style/APBDDetailRightTextLayout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DetailSeparator" />
+
+            <LinearLayout style="@style/APBDDetailLayout" >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/urusan" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_urusan"
+                        style="@style/APBDDetailRightTextLayout" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/DetailSeparator" />
+
+            <LinearLayout style="@style/APBDDetailLayout" 
+                android:id="@+id/apbd_detail_percent_layout"
+                android:visibility="gone"
+                >
+
+                <LinearLayout style="@style/APBDDetailLeftLayout" >
+
+                    <ImageView
+                        style="@style/APBDDetailLeftImageLayout"
+                        android:src="@drawable/timer" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/APBDDetailRightLayout" >
+
+                    <TextView
+                        android:id="@+id/apbd_detail_percent_realization"
+                        style="@style/APBDDetailRightTextLayout" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

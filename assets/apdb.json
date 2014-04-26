@@ -1,0 +1,49 @@
+{[{
+          "income": [
+              {"value": "32500000000000", "name": "Pajak Daerah"},
+              {"value": "1746418633000", "name": "Retribusi Daerah"},
+              {"value": "447550000000", "name": "Hasil Pengelolaan Kekayaan Daerah Yang Dipisahkan"},
+              {"value": "4850246360000", "name": "Lain-Lain Pendapatan Asli Daerah"},
+          ]},
+          {
+          "fund": [
+              {"value": "17684000000000", "name": "Dana Bagi Hasil Pajak/Bagi Hasil Bukan Pajak"},
+              {"value": "86000000000", "name": "Dana Alokasi Umum"},
+          ]},
+          {"another": [
+              {"value": "5000000000000", "name": "Pendapatan Hibah"},
+              {"value": "2386319950000", "name": "Dana Penyesuaian dan Otonomi Khusus"},
+          ]},
+
+          { "spending_indirect": [
+              {"value": "11919071741882", "name": "BELANJA PEGAWAI"},
+              {"value": "4353828000", "name": "BELANJA BUNGA"},
+              {"value": "2617224715500", "name": "BELANJA HIBAH"},
+              {"value": "1220977869500", "name": "BELANJA BANTUAN SOSIAL"},
+              {"value": "36350000000", "name": "BELANJA BANTUAN KEUANGAN KEPADA PROVINSI/KABUPATEN/KOTA DAN PEMERINTAHAN DESA"},
+              {"value": "78643580000", "name": "BELANJA TIDAK TERDUGA"},
+              ]
+          },
+
+          { "spending_direct": [
+              {"value": "2865725367143", "name": "BELANJA PEGAWAI"},
+              {"value": "17104011988954", "name": "BELANJA BARANG DAN JASA"},
+              {"value": "29036388052021", "name": "BELANJA MODAL"}
+              ]
+          },
+
+        { "receiving_cost": [
+              {"value": "7015000000000", "name": "Sisa Lebih Perhitungan Anggaran Tahun Anggaran Sebelumnya"},
+              {"value": "269400000000", "name": "Penerimaan Pinjaman Daerah"},
+              
+              ]
+          },
+             
+        {"outcome_cost": [
+              {"value": "7108000000000", "name": "Penyertaan Modal (Investasi) Pemerintah Daerah"},
+              {"value": "9387800000", "name": "Pembayaran Pokok Utang"},
+              
+              ]
+        }
+
+]}

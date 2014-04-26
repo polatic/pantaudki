@@ -31,27 +31,14 @@ public class HomeActivity extends Activity {
         mSharedPreferences = getSharedPreferences(Constant.PREFERENCES_NAME, Context.MODE_PRIVATE);
         mContext = this;
 
-        // Check if first-time, then redirect to guidelines page
-        if (!mSharedPreferences.getBoolean(Constant.IS_FIRSTTIME, false)) {
-            Intent i = new Intent(this, GuidelineActivity.class);
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(i);
-            finish();
+        // Redirect to pantau activity if user already pass guideline
 
-            overridePendingTransition(R.anim.slide_in_right,
-                    R.anim.slide_out_right);
+        Intent i = new Intent(this, PantauActivity.class);
+        startActivity(i);
+        finish();
 
-        } else {
-            // Redirect to pantau activity if user already pass guideline
-            
-            Intent i = new Intent(this, PantauActivity.class);
-            startActivity(i);
-            finish();
-
-            overridePendingTransition(R.anim.slide_in_right,
-                    R.anim.slide_out_right);
-
-        }
+        overridePendingTransition(R.anim.slide_in_right,
+                R.anim.slide_out_right);
 
     }
 
