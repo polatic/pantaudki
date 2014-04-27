@@ -243,7 +243,7 @@ public class PantauActivity extends ActionBarActivity {
             public void onDrawerClosed(View view) {
                 setActionBarArrowDependingOnFragmentsBackStack();
                 getSupportActionBar().setTitle(mTitle);
-                // supportInvalidateOptionsMenu(); // creates call to
+                 supportInvalidateOptionsMenu(); // creates call to
                 // onPrepareOptionsMenu()
             }
 
@@ -251,8 +251,8 @@ public class PantauActivity extends ActionBarActivity {
             public void onDrawerOpened(View drawerView) {
                 mDrawerToggle.setDrawerIndicatorEnabled(true);
                 getSupportActionBar().setTitle(mDrawerTitle);
-                // supportInvalidateOptionsMenu(); // creates call to
-                // onPrepareOptionsMenu()
+                 supportInvalidateOptionsMenu(); // creates call to
+//                 onPrepareOptionsMenu()
             }
         };
 

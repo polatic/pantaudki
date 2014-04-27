@@ -15,6 +15,7 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.ShareActionProvider;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -45,7 +46,6 @@ public class APBDFragment extends Fragment {
     private TextView percentTextView;
     private ShareActionProvider mShareActionProvider;
 
-
     APBDModel mAPBDModel;
 
     @Override
@@ -60,6 +60,14 @@ public class APBDFragment extends Fragment {
         if (bundle != null) {
             mAPBDModel = bundle.getParcelable(ChildUrusanFragment.PARCELABLE_APDB_KEY);
         }
+        
+        // set title for actionbar drawer
+        getActivity().setTitle(mAPBDModel.getKegiatanName());
+
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(mAPBDModel.getKegiatanName());
+        
 
         mContext = getActivity().getApplicationContext();
         initView(rootView);

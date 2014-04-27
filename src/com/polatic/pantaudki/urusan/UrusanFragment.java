@@ -33,6 +33,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.LocalBroadcastManager;
+import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -94,6 +95,10 @@ public class UrusanFragment extends Fragment {
         int i = getArguments().getInt(Constant.FRAGMENT_NUMBER);
         String menu_title = getResources().getStringArray(R.array.sidebar_menu_array)[i];
         getActivity().setTitle(menu_title);
+
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(menu_title);
 
         initView(rootView);
         loadData();

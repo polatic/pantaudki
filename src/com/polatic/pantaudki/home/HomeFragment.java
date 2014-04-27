@@ -93,6 +93,10 @@ public class HomeFragment extends Fragment {
         String menu_title = getResources().getStringArray(R.array.sidebar_menu_array)[i];
         getActivity().setTitle(menu_title);
 
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(menu_title);
+        
         initView(rootView);
         return rootView;
     }

@@ -24,6 +24,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -109,6 +110,13 @@ public class ChildUrusanFragment extends Fragment {
 
         mParamName = bundle.getString(Constant.JSON_URUSAN_NAME);
         mParamCode = bundle.getString(Constant.JSON_URUSAN_CODE);
+        
+        // set title for actionbar drawer
+        getActivity().setTitle(mParamName);
+        
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setTitle(mParamName);
     }
 
     /**

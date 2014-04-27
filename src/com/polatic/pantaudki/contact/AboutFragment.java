@@ -1,3 +1,4 @@
+
 package com.polatic.pantaudki.contact;
 
 import com.polatic.pantaudki.R;
@@ -10,6 +11,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,23 +44,27 @@ public class AboutFragment extends Fragment implements OnClickListener {
         int i = getArguments().getInt(Constant.FRAGMENT_NUMBER);
         String menu_title = getResources().getStringArray(R.array.sidebar_menu_array)[i];
         getActivity().setTitle(menu_title);
-//
-//        mBtnCall.setOnClickListener(this);
-//        mBtnSms.setOnClickListener(this);
-//        mBtnEmail.setOnClickListener(this);
+
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setTitle(menu_title);
+        //
+        // mBtnCall.setOnClickListener(this);
+        // mBtnSms.setOnClickListener(this);
+        // mBtnEmail.setOnClickListener(this);
 
         return rootView;
     }
 
     private void initView(View rootView) {
-//        // TODO Auto-generated method stub
-//        mBtnCall = (Button) rootView.findViewById(R.id.btn_call);
-//        mBtnSms = (Button) rootView.findViewById(R.id.btn_sms);
-//        mBtnEmail = (Button) rootView.findViewById(R.id.btn_send_email);
-//        
+        // // TODO Auto-generated method stub
+        // mBtnCall = (Button) rootView.findViewById(R.id.btn_call);
+        // mBtnSms = (Button) rootView.findViewById(R.id.btn_sms);
+        // mBtnEmail = (Button) rootView.findViewById(R.id.btn_send_email);
+        //
         mDescriptionVision = (TextView) rootView.findViewById(R.id.about_description_vision);
         mDescriptionVision.setText(Html.fromHtml(getString(R.string.about_dki_vision)));
-        
+
         mDescriptionMission = (TextView) rootView.findViewById(R.id.about_description_mission);
         mDescriptionMission.setText(Html.fromHtml(getString(R.string.about_dki_mission)));
     }
@@ -73,12 +79,12 @@ public class AboutFragment extends Fragment implements OnClickListener {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(Uri.parse(phone));
             startActivity(callIntent);
-            
+
         } else if (v == mBtnEmail) {
             String[] TO = {
-                "dki@jakarta.go.id"
+                    "dki@jakarta.go.id"
             };
-            
+
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setData(Uri.parse("mailto:"));
             emailIntent.setType("text/plain");
@@ -88,14 +94,14 @@ public class AboutFragment extends Fragment implements OnClickListener {
             emailIntent.putExtra(Intent.EXTRA_TEXT, "Kepada Pemerintah DKI Jakarta, \n\n");
 
             LogManager.print("Send email now");
-            
+
             try {
                 startActivity(Intent.createChooser(emailIntent, "Mengirimkan mail..."));
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(getActivity(),
                         "Tidak ada email client yang terinstall.", Toast.LENGTH_LONG).show();
             }
-            
+
         } else {
             Bundle args = new Bundle();
 

@@ -16,6 +16,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +49,11 @@ public class ContactFragment extends Fragment implements OnClickListener {
         int i = getArguments().getInt(Constant.FRAGMENT_NUMBER);
         String menu_title = getResources().getStringArray(R.array.sidebar_menu_array)[i];
         getActivity().setTitle(menu_title);
-
+        
+        // Show back arrow in action bar - MUST
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setTitle(menu_title);
+        
         mBtnCall.setOnClickListener(this);
         mBtnSms.setOnClickListener(this);
         mBtnEmail.setOnClickListener(this);
