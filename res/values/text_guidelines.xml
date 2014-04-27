@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="guideline_home_title">Halaman Depan</string>
+    <string name="guideline_home_description"><![CDATA[Sentuh <strong>HOME</strong> untuk menampilkan pilihan menu lengkap aplikasi seperti Order, Profile dan lainnya]]></string>
+    <string name="guideline_order_title">Order Barang</string>
+    <string name="guideline_order_description"><![CDATA[Klik tombol order untuk setiap barang yang diinginkan. Selanjutnya, masuk ke halaman <strong>ORDER</strong> untuk melakukan proses pemesanan]]></string>    
+    <string name="guideline_call">Hubungi Penjual</string>
+    <string name="guideline_call_description"><![CDATA[Klik menu <strong>HUBUNGI</strong> untuk menanyakan konfirmasi pembayaran, biaya pengiriman serta informasi lainnya seputar penjual dan barang]]></string>
+    <string name="guideline_button_skip">Lewati</string>
+    <string name="guideline_button_next">Berikut</string>
+    <string name="guideline_button_prev">Kembali</string>
+    <string name="guideline_button_finish">Selesai</string>
+    <string name="guideline_button_start">Mulai</string>
+
+</resources>

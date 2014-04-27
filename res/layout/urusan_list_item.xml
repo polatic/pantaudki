@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item">
+
+    <LinearLayout
+        android:id="@+id/urusan_listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/element_padding_small"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/urusan_listview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:ellipsize="end"
+            android:padding="@dimen/element_padding_small"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray_heavy"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
