@@ -16,7 +16,6 @@
         android:smallScreens="true"
         android:xlargeScreens="true" />
 
-
     <uses-feature android:hardwareAccelerated="true" />
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
